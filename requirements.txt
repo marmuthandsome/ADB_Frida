@@ -1,0 +1,11 @@
+# Core dependencies
+frida-tools>=10.0.0
+colorama>=0.4.6
+
+# Android tools
+apkleaks>=2.6.1
+pidcat>=2.1.0
+
+# Optional but recommended
+frida>=16.0.0
+frida-python>=16.0.0
