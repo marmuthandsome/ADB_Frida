@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0F1A"/>
+      <stop offset="100%" style="stop-color:#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C896"/>
+      <stop offset="100%" style="stop-color:#00a8d4"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C896;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00a8d4;stop-opacity:0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#00C896" stroke-width="1">
+    <line x1="200" y1="0" x2="200" y2="900"/>
+    <line x1="400" y1="0" x2="400" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="800" y1="0" x2="800" y2="900"/>
+    <line x1="1000" y1="0" x2="1000" y2="900"/>
+    <line x1="1200" y1="0" x2="1200" y2="900"/>
+    <line x1="1400" y1="0" x2="1400" y2="900"/>
+    <line x1="0" y1="150" x2="1600" y2="150"/>
+    <line x1="0" y1="300" x2="1600" y2="300"/>
+    <line x1="0" y1="450" x2="1600" y2="450"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="0" y1="750" x2="1600" y2="750"/>
+  </g>
+
+  <!-- Glow circle background -->
+  <circle cx="800" cy="430" r="300" fill="url(#glowGrad)"/>
+
+  <!-- Outer hex ring -->
+  <polygon points="800,170 1007,289 1007,527 800,646 593,527 593,289"
+    fill="none" stroke="url(#accentGrad)" stroke-width="1.5" opacity="0.2"/>
+  <polygon points="800,205 975,310 975,510 800,615 625,510 625,310"
+    fill="none" stroke="url(#accentGrad)" stroke-width="1" opacity="0.1"/>
+
+  <!-- Center phone/device shape -->
+  <rect x="745" y="310" width="110" height="190" rx="14"
+    fill="none" stroke="url(#accentGrad)" stroke-width="2.5" filter="url(#glow)"/>
+  <!-- Device screen -->
+  <rect x="757" y="328" width="86" height="138" rx="4" fill="#060a12" opacity="0.9"/>
+  <!-- Home button -->
+  <circle cx="800" cy="482" r="6" fill="none" stroke="url(#accentGrad)" stroke-width="1.5"/>
+
+  <!-- Code lines on screen -->
+  <rect x="765" y="337" width="44" height="3" rx="1.5" fill="#00C896" opacity="0.9"/>
+  <rect x="765" y="345" width="68" height="3" rx="1.5" fill="#00a8d4" opacity="0.6"/>
+  <rect x="765" y="353" width="32" height="3" rx="1.5" fill="#00C896" opacity="0.7"/>
+  <rect x="765" y="361" width="56" height="3" rx="1.5" fill="#00a8d4" opacity="0.5"/>
+  <rect x="765" y="369" width="48" height="3" rx="1.5" fill="#00C896" opacity="0.6"/>
+  <rect x="765" y="377" width="38" height="3" rx="1.5" fill="#fff" opacity="0.2"/>
+  <rect x="765" y="385" width="62" height="3" rx="1.5" fill="#00C896" opacity="0.8"/>
+  <rect x="765" y="393" width="34" height="3" rx="1.5" fill="#00a8d4" opacity="0.5"/>
+  <rect x="765" y="401" width="52" height="3" rx="1.5" fill="#00C896" opacity="0.4"/>
+  <rect x="765" y="409" width="26" height="3" rx="1.5" fill="#00a8d4" opacity="0.6"/>
+  <rect x="765" y="417" width="58" height="3" rx="1.5" fill="#00C896" opacity="0.7"/>
+  <rect x="765" y="425" width="44" height="3" rx="1.5" fill="#fff" opacity="0.15"/>
+  <rect x="765" y="433" width="66" height="3" rx="1.5" fill="#00a8d4" opacity="0.5"/>
+  <rect x="765" y="441" width="36" height="3" rx="1.5" fill="#00C896" opacity="0.6"/>
+  <rect x="765" y="449" width="50" height="3" rx="1.5" fill="#00a8d4" opacity="0.4"/>
+  <rect x="765" y="457" width="42" height="3" rx="1.5" fill="#00C896" opacity="0.5"/>
+
+  <!-- Connector lines -->
+  <line x1="745" y1="405" x2="580" y2="365" stroke="#00C896" stroke-width="1" opacity="0.4" stroke-dasharray="5,4"/>
+  <circle cx="580" cy="365" r="4" fill="#00C896" opacity="0.8" filter="url(#softglow)"/>
+
+  <line x1="855" y1="405" x2="1020" y2="365" stroke="#00a8d4" stroke-width="1" opacity="0.4" stroke-dasharray="5,4"/>
+  <circle cx="1020" cy="365" r="4" fill="#00a8d4" opacity="0.8" filter="url(#softglow)"/>
+
+  <!-- ADB badge left -->
+  <rect x="472" y="338" width="100" height="34" rx="6" fill="#00C896" fill-opacity="0.1" stroke="#00C896" stroke-width="1.2"/>
+  <text x="522" y="360" font-family="'Courier New', monospace" font-size="14" font-weight="bold"
+    fill="#00C896" text-anchor="middle" filter="url(#softglow)">ADB</text>
+
+  <!-- Frida badge right -->
+  <rect x="1028" y="338" width="100" height="34" rx="6" fill="#00a8d4" fill-opacity="0.1" stroke="#00a8d4" stroke-width="1.2"/>
+  <text x="1078" y="360" font-family="'Courier New', monospace" font-size="14" font-weight="bold"
+    fill="#00a8d4" text-anchor="middle" filter="url(#softglow)">FRIDA</text>
+
+  <!-- Bottom SSL bypass badge -->
+  <line x1="800" y1="500" x2="800" y2="558" stroke="#00C896" stroke-width="1" opacity="0.35" stroke-dasharray="4,4"/>
+  <rect x="730" y="558" width="140" height="28" rx="14" fill="#F5FF3C" fill-opacity="0.08" stroke="#F5FF3C" stroke-width="1.2"/>
+  <text x="800" y="577" font-family="'Courier New', monospace" font-size="11" font-weight="bold"
+    fill="#F5FF3C" text-anchor="middle">SSL BYPASS</text>
+
+  <!-- Main title -->
+  <text x="800" y="700" font-family="'Courier New', monospace" font-size="78" font-weight="bold"
+    fill="url(#accentGrad)" text-anchor="middle" filter="url(#glow)" letter-spacing="8">
+    ADB_FRIDA
+  </text>
+
+  <!-- Subtitle -->
+  <text x="800" y="745" font-family="'Courier New', monospace" font-size="20"
+    fill="#ffffff" text-anchor="middle" opacity="0.35" letter-spacing="5">
+    EXECUTOR
+  </text>
+
+  <!-- Top pill badge -->
+  <rect x="718" y="108" width="164" height="28" rx="14" fill="#00C896" fill-opacity="0.1" stroke="#00C896" stroke-width="1"/>
+  <text x="800" y="127" font-family="'Courier New', monospace" font-size="11"
+    fill="#00C896" text-anchor="middle" letter-spacing="2">PENTEST TOOL</text>
+
+  <!-- Corner brackets -->
+  <g opacity="0.3" stroke="#00C896" stroke-width="1.5" fill="none">
+    <polyline points="40,40 40,80 80,80"/>
+    <polyline points="1560,40 1560,80 1520,80"/>
+    <polyline points="40,860 40,820 80,820"/>
+    <polyline points="1560,860 1560,820 1520,820"/>
+  </g>
+</svg>
