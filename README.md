@@ -1,3 +1,6 @@
+<img width="1600" height="900" alt="adb_frida_logo" src="https://raw.githubusercontent.com/marmuthandsome/ADB_Frida/75d9be425173c02c0bbdd95938cabfaa32cfc9e1/adb_frida_logo.svg" />
+
+
 # ADB Frida Executor
 
 A command-line tool to automate common Frida, ADB, and iOS reverse engineering tasks with built-in SSL pinning bypass and root/jailbreak detection bypass capabilities.
